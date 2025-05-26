@@ -1,6 +1,6 @@
 package org.example
 
-data class Exercice(val nom: String, val repetition: Int, val poids: Double, val muscle: List<Muscle>){
+data class Exercice(val id: Int, val nom: String, val repetition: Int, val poids: Double, val muscle: List<Muscle>){
     init {
         require(muscle.isNotEmpty())
     }
